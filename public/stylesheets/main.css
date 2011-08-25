@@ -1,9 +1,9 @@
-/* line 1, ../../sass/main.sass */
+/* line 4, ../../sass/main.sass */
 html {
   margin: 20px;
 }
 
-/* line 4, ../../sass/main.sass */
+/* line 7, ../../sass/main.sass */
 body {
   margin: 0 auto;
   font-family: "Baskerville", Georgia, Times, serif;
@@ -12,49 +12,56 @@ body {
   padding: 15px;
   width: 960px;
   background: #f2f1ea;
+  border: 1px solid red;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
 }
 
-/* line 13, ../../sass/main.sass */
+/* line 18, ../../sass/main.sass */
 header, footer, section, article {
   display: block;
 }
 
-/* line 16, ../../sass/main.sass */
+/* line 21, ../../sass/main.sass */
 #content {
   margin: 0px auto;
   width: 90%;
 }
 
-/* line 20, ../../sass/main.sass */
+/* line 25, ../../sass/main.sass */
 #by {
   font-style: italic;
   margin-right: 5px;
   font-size: 28px;
 }
 
-/* line 25, ../../sass/main.sass */
+/* line 30, ../../sass/main.sass */
 #caption {
   position: absolute;
   font-size: 24px;
   margin: -135px 0 0 70px;
 }
 
-/* line 30, ../../sass/main.sass */
+/* line 35, ../../sass/main.sass */
 #path {
   color: #f71570;
 }
 
-/* line 33, ../../sass/main.sass */
+/* line 38, ../../sass/main.sass */
 a {
   color: #f71570;
   text-decoration: none;
 }
-/* line 36, ../../sass/main.sass */
+/* line 41, ../../sass/main.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 41, ../../sass/main.sass */
+/* line 46, ../../sass/main.sass */
 body > header > h1 {
   font-size: 2.5em;
   font-weight: normal;
@@ -62,15 +69,15 @@ body > header > h1 {
   margin: 20px 0 8px 0;
   text-shadow: 1px 1px white, -1px -1px #444444;
 }
-/* line 47, ../../sass/main.sass */
+/* line 52, ../../sass/main.sass */
 body > header > h1 a {
   color: #cccbc6;
 }
-/* line 49, ../../sass/main.sass */
+/* line 54, ../../sass/main.sass */
 body > header > h1 a:hover {
   color: #999999;
 }
-/* line 51, ../../sass/main.sass */
+/* line 56, ../../sass/main.sass */
 body > header > h3 {
   font-weight: normal;
   display: block;
@@ -80,11 +87,11 @@ body > header > h3 {
   letter-spacing: 1.1px;
   width: 90%;
 }
-/* line 59, ../../sass/main.sass */
+/* line 64, ../../sass/main.sass */
 body > menu {
   border-bottom: 3px dotted #dddddd;
 }
-/* line 61, ../../sass/main.sass */
+/* line 66, ../../sass/main.sass */
 body > menu:after {
   content: ".";
   display: block;
@@ -92,19 +99,19 @@ body > menu:after {
   clear: both;
   visibility: hidden;
 }
-/* line 67, ../../sass/main.sass */
+/* line 72, ../../sass/main.sass */
 body > menu ul {
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 71, ../../sass/main.sass */
+/* line 76, ../../sass/main.sass */
 body > menu ul li {
   float: left;
   padding-right: 30px;
 }
 
-/* line 75, ../../sass/main.sass */
+/* line 80, ../../sass/main.sass */
 h1, h2, h3, h4 {
   display: block;
   margin: 0;
@@ -112,30 +119,30 @@ h1, h2, h3, h4 {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-/* line 81, ../../sass/main.sass */
+/* line 86, ../../sass/main.sass */
 ul, li {
   list-style-type: none;
 }
 
-/* line 84, ../../sass/main.sass */
+/* line 89, ../../sass/main.sass */
 code {
   font-size: 12pt;
   font-family: "Anonymous Pro", "Bitstream Vera Sans", "Monaco", Courier, mono;
 }
 
-/* line 88, ../../sass/main.sass */
+/* line 93, ../../sass/main.sass */
 pre {
   padding: 20px;
   background: #0d0e11;
   color: white;
 }
 
-/* line 93, ../../sass/main.sass */
+/* line 98, ../../sass/main.sass */
 blockquote {
   font-style: italic;
 }
 
-/* line 96, ../../sass/main.sass */
+/* line 101, ../../sass/main.sass */
 body > footer {
   text-align: left;
   padding: 2px 12px;
@@ -143,20 +150,6 @@ body > footer {
   font-size: 18px;
   color: black;
   background-color: #eeeeee;
-}
-
-/* line 104, ../../sass/main.sass */
-.suppliers .supplier-logo {
-  padding: 10px;
-  border: 1px dotted #999999;
-  width: 100px;
-  height: 100px;
-  float: left;
-}
-/* line 110, ../../sass/main.sass */
-.suppliers .supplier-logo img {
-  width: 100px;
-  height: 100px;
 }
 
 /* line 1, ../../sass/partials/_articles.sass */
@@ -341,9 +334,4 @@ body > footer {
 /* line 137, ../../sass/partials/_articles.sass */
 .archived_article .title {
   font-size: 80%;
-}
-
-/* line 116, ../../sass/main.sass */
-body {
-  background: red !important;
 }
