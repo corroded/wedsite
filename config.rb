@@ -19,7 +19,7 @@ module Config
     set :root,        "index"                                   # page to load on /
     set :date,        lambda {|now| now.strftime("%Y/%m/%d") }    # date format for articles
     # set :markdown,  :smart                                    # use markdown + smart-mode
-    # set :disqus,    false                                     # disqus id, or false
+    set :disqus,    "asecretgarden"                                     # disqus id, or false
     set :summary,     :max => 300, :delim => /~/                # length of article summary and delimiter
     set :ext,       'md'                                        # file extension for articles
     # set :cache,      28800                                    # cache duration, in seconds
