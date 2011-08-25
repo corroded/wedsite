@@ -15,7 +15,7 @@ module Config
     # set [:setting], [value]
     #
     set :author,      "eumir and sef"                           # blog author
-    set :title,       "A Secret Garden"                           # site title
+    set :title,       "A secret garden"                           # site title
     set :root,        "index"                                   # page to load on /
     set :date,        lambda {|now| now.strftime("%Y/%m/%d") }    # date format for articles
     # set :markdown,  :smart                                    # use markdown + smart-mode

@@ -1,0 +1,117 @@
+html
+  margin: 20px
+
+body
+  margin: 0 auto
+  font-family: 'Baskerville', Georgia, Times, serif
+  font-size: 20px
+  line-height: 30px
+  padding: 15px
+  width: 960px
+  background: #f2f1ea
+
+header, footer, section, article
+  display: block
+
+#content
+  margin: 0px auto
+  width: 90%
+
+#by
+  font-style: italic
+  margin-right: 5px
+  font-size: 28px
+
+#caption
+  position: absolute
+  font-size: 24px
+  margin: -135px 0 0 70px
+
+#path
+  color: #F71570
+
+a
+  color: #F71570
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+body >
+  header >
+    h1
+      font-size: 2.5em
+      font-weight: normal
+      letter-spacing: 1px
+      margin: 20px 0 8px 0
+      text-shadow: 1px 1px white, -1px -1px #444444
+      a
+        color: #cccbc6
+        &:hover
+          color: #999
+    h3
+      font-weight: normal
+      display: block
+      margin: 0 0 -32px 32px
+      font-size: 80%
+      line-height: 80%
+      letter-spacing: 1.1px
+      width: 90%
+  menu
+    border-bottom: 3px dotted #ddd
+    &:after
+      content: "."
+      display: block
+      height: 0
+      clear: both
+      visibility: hidden
+    ul
+      float: right
+      margin: 0
+      padding: 0
+      li
+        float: left
+        padding-right: 30px
+
+h1, h2, h3, h4
+  display: block
+  margin: 0
+  font-weight: 600
+  font-family: 'Yanone Kaffeesatz', sans-serif
+
+ul, li
+  list-style-type: none
+
+code
+  font-size: 12pt
+  font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono
+
+pre
+  padding: 20px
+  background: #0d0e11
+  color: white
+
+blockquote
+  font-style: italic
+
+body > footer
+  text-align: left
+  padding: 2px 12px
+  font-style: italic
+  font-size: 18px
+  color: #000
+  background-color: #eee
+
+.suppliers .supplier-logo
+  padding: 10px
+  border: 1px dotted #999
+  width: 100px
+  height: 100px
+  float: left
+  img
+    width: 100px
+    height: 100px
+
+@import partials/articles
+
+body
+  background: #f00 !important

@@ -1,0 +1,349 @@
+/* line 1, ../../sass/main.sass */
+html {
+  margin: 20px;
+}
+
+/* line 4, ../../sass/main.sass */
+body {
+  margin: 0 auto;
+  font-family: "Baskerville", Georgia, Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px;
+  width: 960px;
+  background: #f2f1ea;
+}
+
+/* line 13, ../../sass/main.sass */
+header, footer, section, article {
+  display: block;
+}
+
+/* line 16, ../../sass/main.sass */
+#content {
+  margin: 0px auto;
+  width: 90%;
+}
+
+/* line 20, ../../sass/main.sass */
+#by {
+  font-style: italic;
+  margin-right: 5px;
+  font-size: 28px;
+}
+
+/* line 25, ../../sass/main.sass */
+#caption {
+  position: absolute;
+  font-size: 24px;
+  margin: -135px 0 0 70px;
+}
+
+/* line 30, ../../sass/main.sass */
+#path {
+  color: #f71570;
+}
+
+/* line 33, ../../sass/main.sass */
+a {
+  color: #f71570;
+  text-decoration: none;
+}
+/* line 36, ../../sass/main.sass */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 41, ../../sass/main.sass */
+body > header > h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 20px 0 8px 0;
+  text-shadow: 1px 1px white, -1px -1px #444444;
+}
+/* line 47, ../../sass/main.sass */
+body > header > h1 a {
+  color: #cccbc6;
+}
+/* line 49, ../../sass/main.sass */
+body > header > h1 a:hover {
+  color: #999999;
+}
+/* line 51, ../../sass/main.sass */
+body > header > h3 {
+  font-weight: normal;
+  display: block;
+  margin: 0 0 -32px 32px;
+  font-size: 80%;
+  line-height: 80%;
+  letter-spacing: 1.1px;
+  width: 90%;
+}
+/* line 59, ../../sass/main.sass */
+body > menu {
+  border-bottom: 3px dotted #dddddd;
+}
+/* line 61, ../../sass/main.sass */
+body > menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 67, ../../sass/main.sass */
+body > menu ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 71, ../../sass/main.sass */
+body > menu ul li {
+  float: left;
+  padding-right: 30px;
+}
+
+/* line 75, ../../sass/main.sass */
+h1, h2, h3, h4 {
+  display: block;
+  margin: 0;
+  font-weight: 600;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+/* line 81, ../../sass/main.sass */
+ul, li {
+  list-style-type: none;
+}
+
+/* line 84, ../../sass/main.sass */
+code {
+  font-size: 12pt;
+  font-family: "Anonymous Pro", "Bitstream Vera Sans", "Monaco", Courier, mono;
+}
+
+/* line 88, ../../sass/main.sass */
+pre {
+  padding: 20px;
+  background: #0d0e11;
+  color: white;
+}
+
+/* line 93, ../../sass/main.sass */
+blockquote {
+  font-style: italic;
+}
+
+/* line 96, ../../sass/main.sass */
+body > footer {
+  text-align: left;
+  padding: 2px 12px;
+  font-style: italic;
+  font-size: 18px;
+  color: black;
+  background-color: #eeeeee;
+}
+
+/* line 104, ../../sass/main.sass */
+.suppliers .supplier-logo {
+  padding: 10px;
+  border: 1px dotted #999999;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+/* line 110, ../../sass/main.sass */
+.suppliers .supplier-logo img {
+  width: 100px;
+  height: 100px;
+}
+
+/* line 1, ../../sass/partials/_articles.sass */
+#tagged_articles {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+/* line 8, ../../sass/partials/_articles.sass */
+.article {
+  padding: 20px 20px 40px 20px;
+}
+/* line 10, ../../sass/partials/_articles.sass */
+.article:first-of-type {
+  padding-top: 0;
+}
+/* line 12, ../../sass/partials/_articles.sass */
+.article h3 {
+  margin: 30px 0 20px;
+}
+/* line 14, ../../sass/partials/_articles.sass */
+.article header h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 20px;
+}
+/* line 22, ../../sass/partials/_articles.sass */
+.article header h1 a {
+  color: black;
+  display: block;
+  -webkit-transition: color 150ms ease-in-out;
+  /*-moz-transition: color 150ms ease-in-out; */
+  transition: color 150ms ease-in-out;
+}
+/* line 28, ../../sass/partials/_articles.sass */
+.article header h1 a:hover {
+  color: #f71570;
+}
+/* line 30, ../../sass/partials/_articles.sass */
+.article .content p, .article .entry-summary p {
+  text-align: justify;
+}
+/* line 32, ../../sass/partials/_articles.sass */
+.article .meta {
+  font: 14px "Droid Serif", sans-serif;
+  margin: 40px 0 -20px;
+  /* CSS3 Flexible Box Model */
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+}
+/* line 42, ../../sass/partials/_articles.sass */
+.article .meta div {
+  background: #f3f3f3;
+  /* Fallback */
+  background: -moz-linear-gradient(top, #f3f3f3 0%, #ececec 100%);
+  /* FF 3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(100%, #ececec));
+  /* Chrome, Safari 4+ */
+  background: -webkit-linear-gradient(top, #f3f3f3 0%, #ececec 100%);
+  /* Chrome 10+, Safari 5.1+ */
+  background: -o-linear-gradient(top, #f3f3f3 0%, #ececec 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f3f3f3 0%, #ececec 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #f3f3f3 0%, #ececec 100%);
+  /* W3C */
+  border: 1px solid;
+  letter-spacing: 0.08px;
+  font-weight: bold;
+  border-color: #eeeeee #c9c9c9 #c9c9c9 #eeeeee;
+  border-radius: 5px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 4px 16px 0px 16px;
+  text-shadow: 0 1px 0 #eeeeee;
+  height: 38px;
+  /* 2:1 ratio */
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex: 2;
+  text-align: right;
+}
+/* line 72, ../../sass/partials/_articles.sass */
+.article .meta div p {
+  margin-top: 6px;
+  font-weight: normal;
+}
+/* line 75, ../../sass/partials/_articles.sass */
+.article .meta div a.tag {
+  font-weight: bold;
+}
+/* line 77, ../../sass/partials/_articles.sass */
+.article .meta div p.tags {
+  background: url(/img/theme/tag_icon_24.png) 0px -1px no-repeat;
+  float: left;
+  padding-left: 30px;
+}
+/* line 81, ../../sass/partials/_articles.sass */
+.article .more-link {
+  letter-spacing: 0.08px;
+  font-weight: normal;
+  font-size: 90%;
+  margin: -40px 10px;
+  float: right;
+}
+/* line 87, ../../sass/partials/_articles.sass */
+.article figure {
+  background: transparent;
+  border: 3px dotted #dddddd;
+  border-radius: 5px 5px 5px 5px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  height: 160px;
+  width: 160px;
+  -webkit-transition: border 200ms ease;
+  /*-moz-transition: border 200ms ease; */
+  transition: border 200ms ease;
+  margin: 0 20px 20px 0;
+  margin-left: -40px;
+  margin-top: 60px;
+}
+/* line 99, ../../sass/partials/_articles.sass */
+.article figure:hover {
+  border: 3px dotted #f71570;
+}
+/* line 101, ../../sass/partials/_articles.sass */
+.article figure img {
+  margin: 0px;
+  padding: 0px;
+}
+/* line 105, ../../sass/partials/_articles.sass */
+.article figure.alignleft {
+  margin: 0 20px 20px 0;
+}
+/* line 107, ../../sass/partials/_articles.sass */
+.article figure.alignright {
+  margin: 0 0 20px 20px;
+}
+/* line 111, ../../sass/partials/_articles.sass */
+.article figcaption {
+  margin: 10px 0;
+  font: 14px "Droid Serif", Georgia, serif;
+  color: #555555;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+}
+/* line 117, ../../sass/partials/_articles.sass */
+.article .comments {
+  margin: 32px;
+}
+/* line 119, ../../sass/partials/_articles.sass */
+.article .date {
+  font-style: italic;
+  float: right;
+  color: #f71570;
+  line-height: 43px;
+  margin: 24px 24px 12px 24px;
+  padding: 24px;
+  border: 3px dashed #dddddd;
+}
+
+/* Post title */
+/* Post meta */
+/* Post thumbnail and images */
+/* line 134, ../../sass/partials/_articles.sass */
+.archived_article {
+  width: 220px;
+  float: left;
+}
+/* line 137, ../../sass/partials/_articles.sass */
+.archived_article .title {
+  font-size: 80%;
+}
+
+/* line 116, ../../sass/main.sass */
+body {
+  background: red !important;
+}
