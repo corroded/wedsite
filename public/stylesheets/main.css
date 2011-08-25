@@ -150,10 +150,6 @@ header h1 a {
   color: #cccbc6;
 }
 /* line 12, ../../sass/partials/_header.sass */
-header h1 a:hover {
-  color: #999999;
-}
-/* line 14, ../../sass/partials/_header.sass */
 header h3.sub-title {
   color: #666666;
   font-weight: normal;
@@ -195,6 +191,14 @@ menu ul li a {
   letter-spacing: 0.1em;
   color: #b0dfe5;
   text-shadow: 1px 1px white, -1px -1px #cccccc;
+  -moz-transition: color 150ms ease-in-out;
+  -webkit-transition: color 150ms ease-in-out;
+  -o-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
+/* line 24, ../../sass/partials/_nav.sass */
+menu ul li a:hover {
+  color: #fff3cb;
 }
 
 /* line 1, ../../sass/partials/_articles.sass */
@@ -221,12 +225,11 @@ menu ul li a {
 /* line 14, ../../sass/partials/_articles.sass */
 .article header h1 {
   margin-bottom: 20px;
-  margin-left: 20px;
   font-size: 26px;
   letter-spacing: 1.2px;
   line-height: 30px;
 }
-/* line 22, ../../sass/partials/_articles.sass */
+/* line 21, ../../sass/partials/_articles.sass */
 .article header h1 a {
   color: black;
   display: block;
@@ -235,15 +238,15 @@ menu ul li a {
   -o-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
-/* line 26, ../../sass/partials/_articles.sass */
+/* line 25, ../../sass/partials/_articles.sass */
 .article header h1 a:hover {
   color: #f71570;
 }
-/* line 28, ../../sass/partials/_articles.sass */
+/* line 27, ../../sass/partials/_articles.sass */
 .article .content p, .article .entry-summary p {
   text-align: justify;
 }
-/* line 30, ../../sass/partials/_articles.sass */
+/* line 29, ../../sass/partials/_articles.sass */
 .article .meta {
   font: 14px "Droid Serif", sans-serif;
   margin: 40px 0 -20px;
@@ -255,7 +258,7 @@ menu ul li a {
   -moz-box-orient: horizontal;
   box-orient: horizontal;
 }
-/* line 40, ../../sass/partials/_articles.sass */
+/* line 39, ../../sass/partials/_articles.sass */
 .article .meta div {
   background: #f3f3f3;
   /* Fallback */
@@ -287,22 +290,22 @@ menu ul li a {
   box-flex: 2;
   text-align: right;
 }
-/* line 70, ../../sass/partials/_articles.sass */
+/* line 69, ../../sass/partials/_articles.sass */
 .article .meta div p {
   margin-top: 6px;
   font-weight: normal;
 }
-/* line 73, ../../sass/partials/_articles.sass */
+/* line 72, ../../sass/partials/_articles.sass */
 .article .meta div a.tag {
   font-weight: bold;
 }
-/* line 75, ../../sass/partials/_articles.sass */
+/* line 74, ../../sass/partials/_articles.sass */
 .article .meta div p.tags {
   background: url(/img/theme/tag_icon_24.png) 0px -1px no-repeat;
   float: left;
   padding-left: 30px;
 }
-/* line 79, ../../sass/partials/_articles.sass */
+/* line 78, ../../sass/partials/_articles.sass */
 .article .more-link {
   letter-spacing: 0.08px;
   font-weight: normal;
@@ -310,7 +313,7 @@ menu ul li a {
   margin: -40px 10px;
   float: right;
 }
-/* line 85, ../../sass/partials/_articles.sass */
+/* line 84, ../../sass/partials/_articles.sass */
 .article figure {
   background: transparent;
   border: 3px dotted #dddddd;
@@ -327,24 +330,24 @@ menu ul li a {
   margin-left: -40px;
   margin-top: 60px;
 }
-/* line 97, ../../sass/partials/_articles.sass */
+/* line 96, ../../sass/partials/_articles.sass */
 .article figure:hover {
   border: 3px dotted #f71570;
 }
-/* line 99, ../../sass/partials/_articles.sass */
+/* line 98, ../../sass/partials/_articles.sass */
 .article figure img {
   margin: 0px;
   padding: 0px;
 }
-/* line 103, ../../sass/partials/_articles.sass */
+/* line 102, ../../sass/partials/_articles.sass */
 .article figure.alignleft {
   margin: 0 20px 20px 0;
 }
-/* line 105, ../../sass/partials/_articles.sass */
+/* line 104, ../../sass/partials/_articles.sass */
 .article figure.alignright {
   margin: 0 0 20px 20px;
 }
-/* line 109, ../../sass/partials/_articles.sass */
+/* line 108, ../../sass/partials/_articles.sass */
 .article figcaption {
   margin: 10px 0;
   font: 14px "Droid Serif", Georgia, serif;
@@ -352,11 +355,11 @@ menu ul li a {
   text-align: center;
   text-shadow: 0 1px 0 white;
 }
-/* line 115, ../../sass/partials/_articles.sass */
+/* line 114, ../../sass/partials/_articles.sass */
 .article .comments {
   margin: 32px;
 }
-/* line 117, ../../sass/partials/_articles.sass */
+/* line 116, ../../sass/partials/_articles.sass */
 .article .date {
   font-style: italic;
   float: right;
@@ -370,20 +373,36 @@ menu ul li a {
 /* Post title */
 /* Post meta */
 /* Post thumbnail and images */
-/* line 132, ../../sass/partials/_articles.sass */
+/* line 131, ../../sass/partials/_articles.sass */
 .archived_article {
   width: 220px;
   float: left;
 }
-/* line 135, ../../sass/partials/_articles.sass */
+/* line 134, ../../sass/partials/_articles.sass */
 .archived_article .title {
   font-size: 80%;
 }
 
-/* line 3, ../../sass/partials/_suppliers.sass */
+/* line 1, ../../sass/partials/_suppliers.sass */
+.suppliers {
+  margin-top: 20px;
+}
+/* line 5, ../../sass/partials/_suppliers.sass */
+.suppliers ul {
+  *zoom: 1;
+}
+/* line 38, /Users/eumir/.rvm/gems/ruby-1.9.2-p180@deadcanvas/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.suppliers ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../../sass/partials/_suppliers.sass */
 .suppliers .supplier {
   *zoom: 1;
   margin-bottom: 10px;
+  width: 48%;
+  float: left;
 }
 /* line 38, /Users/eumir/.rvm/gems/ruby-1.9.2-p180@deadcanvas/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .suppliers .supplier:after {
@@ -391,20 +410,20 @@ menu ul li a {
   display: table;
   clear: both;
 }
-/* line 8, ../../sass/partials/_suppliers.sass */
+/* line 15, ../../sass/partials/_suppliers.sass */
 .suppliers .supplier a {
   display: block;
-  background: #fff3cb;
+  background: #b0dfe5;
   -moz-transition: background 250ms ease-in-out;
   -webkit-transition: background 250ms ease-in-out;
   -o-transition: background 250ms ease-in-out;
   transition: background 250ms ease-in-out;
 }
-/* line 12, ../../sass/partials/_suppliers.sass */
+/* line 19, ../../sass/partials/_suppliers.sass */
 .suppliers .supplier a:hover {
-  background: #b0dfe5;
+  background: #fff3cb;
 }
-/* line 15, ../../sass/partials/_suppliers.sass */
+/* line 22, ../../sass/partials/_suppliers.sass */
 .suppliers .supplier .logo {
   margin-right: 10px;
   padding: 5px;
@@ -419,16 +438,16 @@ menu ul li a {
   width: 100px;
   height: 100px;
 }
-/* line 24, ../../sass/partials/_suppliers.sass */
+/* line 31, ../../sass/partials/_suppliers.sass */
 .suppliers .supplier .logo img {
   width: 100px;
   height: 100px;
 }
-/* line 27, ../../sass/partials/_suppliers.sass */
+/* line 34, ../../sass/partials/_suppliers.sass */
 .suppliers .supplier .details {
   float: left;
 }
-/* line 30, ../../sass/partials/_suppliers.sass */
+/* line 37, ../../sass/partials/_suppliers.sass */
 .suppliers .supplier .details .name {
   color: #b0dfe5;
 }

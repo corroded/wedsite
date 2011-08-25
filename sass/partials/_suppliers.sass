@@ -1,16 +1,23 @@
 .suppliers
+  margin:
+    top: 20px
+
+  ul
+    +pie-clearfix
 
   .supplier
     +pie-clearfix
     margin:
       bottom: 10px
+    width: 48%
+    float: left
 
     a
       display: block
-      background: $alt-color
+      background: $main-color
       +transition(background 250ms ease-in-out)
       &:hover
-        background: $main-color
+        background: $alt-color
 
     .logo
       margin:
