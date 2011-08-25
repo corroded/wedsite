@@ -16,10 +16,10 @@ Compass.configure_sass_plugin!
 # Rack config
 use Rack::CommonLogger
 use Rack::Static,
-  :urls => ['/stylesheets', '/js', '/img', '/favicon.ico'], :root => 'public'
+  :urls => ['/stylesheets', '/javascripts', '/images', '/favicon.ico'], :root => 'public'
 
 # Middleware
-use Sass::Plugin::Rack    # Compile Sass on the fly
+#use Sass::Plugin::Rack    # Compile Sass on the fly
 
 require File.expand_path("../config", __FILE__)
 
