@@ -1,1 +1,10 @@
-$avatar-dimensions-medium: 100px
+@mixin avatar-dimensions-medium
+  width: 100px
+  height: 100px
+
+@mixin inner-shadow($col1: #fff, $col2: #444)
+  +text-shadow(1px 1px $col1, -1px -1px $col2)
+
+$main-color: #b0dfe5
+$alt-color: #fff3cb
+$accent: #8c8a77

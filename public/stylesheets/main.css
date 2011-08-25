@@ -79,128 +79,55 @@ body {
   background: #f2f1ea;
 }
 
-/* line 18, ../../sass/main.sass */
+/* line 19, ../../sass/main.sass */
 header, footer, section, article {
   display: block;
 }
 
-/* line 21, ../../sass/main.sass */
-#content {
-  margin: 0px auto;
-  width: 90%;
-}
-
-/* line 25, ../../sass/main.sass */
-#by {
-  font-style: italic;
-  margin-right: 5px;
-  font-size: 28px;
-}
-
-/* line 30, ../../sass/main.sass */
-#caption {
-  position: absolute;
-  font-size: 24px;
-  margin: -135px 0 0 70px;
-}
-
-/* line 35, ../../sass/main.sass */
-#path {
-  color: #f71570;
-}
-
-/* line 38, ../../sass/main.sass */
+/* line 22, ../../sass/main.sass */
 a {
-  color: #f71570;
+  color: #b0dfe5;
   text-decoration: none;
 }
-/* line 41, ../../sass/main.sass */
+/* line 25, ../../sass/main.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 46, ../../sass/main.sass */
-body > header > h1 {
-  font-size: 2.5em;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin: 20px 0 8px 0;
-  text-shadow: 1px 1px white, -1px -1px #444444;
-}
-/* line 52, ../../sass/main.sass */
-body > header > h1 a {
-  color: #cccbc6;
-}
-/* line 54, ../../sass/main.sass */
-body > header > h1 a:hover {
-  color: #999999;
-}
-/* line 56, ../../sass/main.sass */
-body > header > h3 {
-  font-weight: normal;
-  display: block;
-  margin: 0 0 -32px 32px;
-  font-size: 80%;
-  line-height: 80%;
-  letter-spacing: 1.1px;
-  width: 90%;
-}
-/* line 64, ../../sass/main.sass */
-body > menu {
-  border-bottom: 3px dotted #dddddd;
-}
-/* line 66, ../../sass/main.sass */
-body > menu:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-/* line 72, ../../sass/main.sass */
-body > menu ul {
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-/* line 76, ../../sass/main.sass */
-body > menu ul li {
-  float: left;
-  padding-right: 30px;
-}
-
-/* line 80, ../../sass/main.sass */
+/* line 28, ../../sass/main.sass */
 h1, h2, h3, h4 {
   display: block;
   margin: 0;
-  font-weight: 600;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
-/* line 86, ../../sass/main.sass */
-ul, li {
-  list-style-type: none;
+/* line 34, ../../sass/main.sass */
+h2 {
+  color: #b0dfe5;
+  font-size: 2em;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
-/* line 89, ../../sass/main.sass */
+/* line 42, ../../sass/main.sass */
 code {
   font-size: 12pt;
   font-family: "Anonymous Pro", "Bitstream Vera Sans", "Monaco", Courier, mono;
 }
 
-/* line 93, ../../sass/main.sass */
+/* line 47, ../../sass/main.sass */
 pre {
   padding: 20px;
   background: #0d0e11;
   color: white;
 }
 
-/* line 98, ../../sass/main.sass */
+/* line 52, ../../sass/main.sass */
 blockquote {
   font-style: italic;
 }
 
-/* line 101, ../../sass/main.sass */
+/* line 55, ../../sass/main.sass */
 body > footer {
   text-align: left;
   padding: 2px 12px;
@@ -208,6 +135,66 @@ body > footer {
   font-size: 18px;
   color: black;
   background-color: #eeeeee;
+}
+
+/* line 2, ../../sass/partials/_header.sass */
+header h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 20px 0 8px 0;
+  text-shadow: 1px 1px white, -1px -1px #444444;
+}
+/* line 10, ../../sass/partials/_header.sass */
+header h1 a {
+  color: #cccbc6;
+}
+/* line 12, ../../sass/partials/_header.sass */
+header h1 a:hover {
+  color: #999999;
+}
+/* line 14, ../../sass/partials/_header.sass */
+header h3.sub-title {
+  color: #666666;
+  font-weight: normal;
+  font-size: 1em;
+  display: block;
+  letter-spacing: 0.9px;
+  margin-left: 55px;
+  margin-top: -5px;
+  text-shadow: 1px 1px white, -1px -1px #cccccc;
+}
+
+/* line 1, ../../sass/partials/_nav.sass */
+menu {
+  border-bottom: 3px dotted #dddddd;
+  *zoom: 1;
+}
+/* line 38, /Users/eumir/.rvm/gems/ruby-1.9.2-p180@deadcanvas/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 5, ../../sass/partials/_nav.sass */
+menu ul {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+/* line 11, ../../sass/partials/_nav.sass */
+menu ul li {
+  float: left;
+  padding-right: 30px;
+}
+/* line 15, ../../sass/partials/_nav.sass */
+menu ul li a {
+  font-weight: bold;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  color: #b0dfe5;
+  text-shadow: 1px 1px white, -1px -1px #cccccc;
 }
 
 /* line 1, ../../sass/partials/_articles.sass */
@@ -234,30 +221,29 @@ body > footer {
 /* line 14, ../../sass/partials/_articles.sass */
 .article header h1 {
   margin-bottom: 20px;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 1.2px;
-  font-weight: bold;
-  line-height: 30px;
   margin-left: 20px;
+  font-size: 26px;
+  letter-spacing: 1.2px;
+  line-height: 30px;
 }
 /* line 22, ../../sass/partials/_articles.sass */
 .article header h1 a {
   color: black;
   display: block;
+  -moz-transition: color 150ms ease-in-out;
   -webkit-transition: color 150ms ease-in-out;
-  /*-moz-transition: color 150ms ease-in-out; */
+  -o-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
-/* line 28, ../../sass/partials/_articles.sass */
+/* line 26, ../../sass/partials/_articles.sass */
 .article header h1 a:hover {
   color: #f71570;
 }
-/* line 30, ../../sass/partials/_articles.sass */
+/* line 28, ../../sass/partials/_articles.sass */
 .article .content p, .article .entry-summary p {
   text-align: justify;
 }
-/* line 32, ../../sass/partials/_articles.sass */
+/* line 30, ../../sass/partials/_articles.sass */
 .article .meta {
   font: 14px "Droid Serif", sans-serif;
   margin: 40px 0 -20px;
@@ -269,7 +255,7 @@ body > footer {
   -moz-box-orient: horizontal;
   box-orient: horizontal;
 }
-/* line 42, ../../sass/partials/_articles.sass */
+/* line 40, ../../sass/partials/_articles.sass */
 .article .meta div {
   background: #f3f3f3;
   /* Fallback */
@@ -301,22 +287,22 @@ body > footer {
   box-flex: 2;
   text-align: right;
 }
-/* line 72, ../../sass/partials/_articles.sass */
+/* line 70, ../../sass/partials/_articles.sass */
 .article .meta div p {
   margin-top: 6px;
   font-weight: normal;
 }
-/* line 75, ../../sass/partials/_articles.sass */
+/* line 73, ../../sass/partials/_articles.sass */
 .article .meta div a.tag {
   font-weight: bold;
 }
-/* line 77, ../../sass/partials/_articles.sass */
+/* line 75, ../../sass/partials/_articles.sass */
 .article .meta div p.tags {
   background: url(/img/theme/tag_icon_24.png) 0px -1px no-repeat;
   float: left;
   padding-left: 30px;
 }
-/* line 81, ../../sass/partials/_articles.sass */
+/* line 79, ../../sass/partials/_articles.sass */
 .article .more-link {
   letter-spacing: 0.08px;
   font-weight: normal;
@@ -324,7 +310,7 @@ body > footer {
   margin: -40px 10px;
   float: right;
 }
-/* line 87, ../../sass/partials/_articles.sass */
+/* line 85, ../../sass/partials/_articles.sass */
 .article figure {
   background: transparent;
   border: 3px dotted #dddddd;
@@ -341,24 +327,24 @@ body > footer {
   margin-left: -40px;
   margin-top: 60px;
 }
-/* line 99, ../../sass/partials/_articles.sass */
+/* line 97, ../../sass/partials/_articles.sass */
 .article figure:hover {
   border: 3px dotted #f71570;
 }
-/* line 101, ../../sass/partials/_articles.sass */
+/* line 99, ../../sass/partials/_articles.sass */
 .article figure img {
   margin: 0px;
   padding: 0px;
 }
-/* line 105, ../../sass/partials/_articles.sass */
+/* line 103, ../../sass/partials/_articles.sass */
 .article figure.alignleft {
   margin: 0 20px 20px 0;
 }
-/* line 107, ../../sass/partials/_articles.sass */
+/* line 105, ../../sass/partials/_articles.sass */
 .article figure.alignright {
   margin: 0 0 20px 20px;
 }
-/* line 111, ../../sass/partials/_articles.sass */
+/* line 109, ../../sass/partials/_articles.sass */
 .article figcaption {
   margin: 10px 0;
   font: 14px "Droid Serif", Georgia, serif;
@@ -366,11 +352,11 @@ body > footer {
   text-align: center;
   text-shadow: 0 1px 0 white;
 }
-/* line 117, ../../sass/partials/_articles.sass */
+/* line 115, ../../sass/partials/_articles.sass */
 .article .comments {
   margin: 32px;
 }
-/* line 119, ../../sass/partials/_articles.sass */
+/* line 117, ../../sass/partials/_articles.sass */
 .article .date {
   font-style: italic;
   float: right;
@@ -384,12 +370,65 @@ body > footer {
 /* Post title */
 /* Post meta */
 /* Post thumbnail and images */
-/* line 134, ../../sass/partials/_articles.sass */
+/* line 132, ../../sass/partials/_articles.sass */
 .archived_article {
   width: 220px;
   float: left;
 }
-/* line 137, ../../sass/partials/_articles.sass */
+/* line 135, ../../sass/partials/_articles.sass */
 .archived_article .title {
   font-size: 80%;
+}
+
+/* line 3, ../../sass/partials/_suppliers.sass */
+.suppliers .supplier {
+  *zoom: 1;
+  margin-bottom: 10px;
+}
+/* line 38, /Users/eumir/.rvm/gems/ruby-1.9.2-p180@deadcanvas/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.suppliers .supplier:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 8, ../../sass/partials/_suppliers.sass */
+.suppliers .supplier a {
+  display: block;
+  background: #fff3cb;
+  -moz-transition: background 250ms ease-in-out;
+  -webkit-transition: background 250ms ease-in-out;
+  -o-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+}
+/* line 12, ../../sass/partials/_suppliers.sass */
+.suppliers .supplier a:hover {
+  background: #b0dfe5;
+}
+/* line 15, ../../sass/partials/_suppliers.sass */
+.suppliers .supplier .logo {
+  margin-right: 10px;
+  padding: 5px;
+  float: left;
+  border: 1px dotted #999999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
+/* line 24, ../../sass/partials/_suppliers.sass */
+.suppliers .supplier .logo img {
+  width: 100px;
+  height: 100px;
+}
+/* line 27, ../../sass/partials/_suppliers.sass */
+.suppliers .supplier .details {
+  float: left;
+}
+/* line 30, ../../sass/partials/_suppliers.sass */
+.suppliers .supplier .details .name {
+  color: #b0dfe5;
 }

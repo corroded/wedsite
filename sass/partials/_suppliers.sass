@@ -1,11 +1,31 @@
 .suppliers
-  .supplier-logo
-    padding: 10px
-    border: 1px dotted #999
-    width: 100px
-    height: 100px
-    float: left
-    img
-      width: 100px
-      height: 100px
 
+  .supplier
+    +pie-clearfix
+    margin:
+      bottom: 10px
+
+    a
+      display: block
+      background: $alt-color
+      +transition(background 250ms ease-in-out)
+      &:hover
+        background: $main-color
+
+    .logo
+      margin:
+        right: 10px
+      padding: 5px
+      float: left
+      border: 1px dotted #999
+      +border-radius(5px)
+      +avatar-dimensions-medium
+
+      img
+        +avatar-dimensions-medium
+
+    .details
+      float: left
+
+      .name
+        color: $main-color

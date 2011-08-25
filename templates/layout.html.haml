@@ -2,6 +2,7 @@
 %html
   %head
     %link{:href => "http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Raleway:100", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "/index.xml", :rel => "alternate", :title => "#{title} - atom feed", :type => "application/atom+xml"}/
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
@@ -10,8 +11,8 @@
     %header
       %h1
         %a{:href => "/"}= @config[:title]
-      %h3
-        a blog by #{@config[:author]}
+      %h3.sub-title
+        a wedding blog by #{@config[:author]}
     %menu
       %ul
         %li
