@@ -252,12 +252,12 @@ menu ul li a:hover {
   font: 14px "Droid Serif", sans-serif;
   margin: 40px 0 -20px;
   /* CSS3 Flexible Box Model */
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  box-orient: horizontal;
+  /* display: -webkit-box */
+  /* display: -moz-box */
+  /* display: box */
+  /* -webkit-box-orient: horizontal */
+  /* -moz-box-orient: horizontal */
+  /* box-orient: horizontal */
 }
 /* line 41, ../../sass/partials/_articles.sass */
 .article .meta div {
@@ -276,10 +276,15 @@ menu ul li a:hover {
   /* background: linear-gradient(top, #f3f3f3 0%, #ececec 100%) */
   /* W3C */
   border: 1px solid;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
   letter-spacing: 0.08px;
   font-weight: bold;
   border-color: #eeeeee #c9c9c9 #c9c9c9 #eeeeee;
-  border-radius: 5px;
   line-height: 1.8;
   margin: 0;
   padding: 4px 16px 0px 16px;
