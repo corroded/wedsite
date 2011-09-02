@@ -6,7 +6,7 @@
   margin-bottom: 20px
 
 .article
-  padding: 20px 20px 40px 20px
+  padding: 20px
   &:first-of-type
     padding-top: 0
   h3
@@ -28,6 +28,8 @@
     text-align: justify
     margin:
       bottom: 10px
+    font:
+      size: 18px
 
   ul
     margin:
@@ -37,7 +39,7 @@
         type: disc
         position: inside
   .meta
-    font: 14px 'Droid Serif', sans-serif
+    font: 13px 'Droid Serif', sans-serif
     margin: 40px 0 -20px
     /* CSS3 Flexible Box Model
     /* display: -webkit-box
@@ -48,6 +50,7 @@
     /* box-orient: horizontal
     div
       background: $body-bg
+      +background-image(linear-gradient(#efefef, $body-bg))
       /* Fallback
       /* background: -moz-linear-gradient(top, #f3f3f3 0%, #ececec 100%)
       /* FF 3.6+
@@ -128,7 +131,7 @@
     float: right
     color: #F71570
     line-height: 43px
-    margin: 24px 24px 12px 24px
+    margin: -48px 24px 0 24px
     padding: 24px
     border: 3px dashed #ddd
 
