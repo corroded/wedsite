@@ -19,7 +19,7 @@ use Rack::Static,
   :urls => ['/stylesheets', '/javascripts', '/images', '/favicon.ico'], :root => 'public'
 
 # Middleware
-use Sass::Plugin::Rack    # Compile Sass on the fly
+#use Sass::Plugin::Rack    # Compile Sass on the fly
 
 require File.expand_path("../config", __FILE__)
 
