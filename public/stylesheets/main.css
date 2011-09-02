@@ -227,7 +227,7 @@ menu ul li a {
 }
 /* line 21, ../../sass/partials/_articles.sass */
 .article header h1 a {
-  color: black;
+  color: #b0dfe5;
   display: block;
   -moz-transition: color 150ms ease-in-out;
   -webkit-transition: color 150ms ease-in-out;
@@ -236,7 +236,7 @@ menu ul li a {
 }
 /* line 25, ../../sass/partials/_articles.sass */
 .article header h1 a:hover {
-  color: #f71570;
+  color: #cccccc;
 }
 /* line 27, ../../sass/partials/_articles.sass */
 .article .content p, .article .entry-summary p {
