@@ -71,7 +71,7 @@ html {
 /* line 11, ../../sass/main.sass */
 body {
   margin: 0 auto;
-  font-family: "Baskerville", Georgia, Times, serif;
+  font-family: "Alice", Georgia, Times, serif;
   font-size: 20px;
   line-height: 30px;
   padding: 15px;
@@ -98,7 +98,7 @@ a:hover {
 h1, h2, h3, h4 {
   display: block;
   margin: 0;
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Alice", sans-serif;
 }
 
 /* line 36, ../../sass/main.sass */
@@ -141,23 +141,25 @@ body > footer {
 header h1 {
   font-size: 2.5em;
   font-weight: normal;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 1px;
   margin: 20px 0 8px 0;
   text-shadow: 1px 1px white, -1px -1px #444444;
 }
-/* line 10, ../../sass/partials/_header.sass */
+/* line 11, ../../sass/partials/_header.sass */
 header h1 a {
   color: #b0dfe5;
 }
-/* line 12, ../../sass/partials/_header.sass */
+/* line 13, ../../sass/partials/_header.sass */
 header h1 a:hover {
   text-decoration: none;
 }
-/* line 15, ../../sass/partials/_header.sass */
+/* line 16, ../../sass/partials/_header.sass */
 header h3.sub-title {
   color: #666666;
   font-weight: normal;
   font-size: 1em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   display: block;
   letter-spacing: 0.9px;
   margin-left: 55px;
@@ -178,8 +180,8 @@ nav:after {
 }
 /* line 5, ../../sass/partials/_nav.sass */
 nav ul {
-  font-family: "Abril Fatface", cursive;
-  font-size: 13px;
+  font-family: "Alice", serif;
+  font-size: 16px;
   float: right;
   margin: 0;
   padding: 0;
@@ -195,7 +197,11 @@ nav ul li a {
   font-size: 1.3em;
   letter-spacing: 0.1em;
   color: #b0dfe5;
-  text-shadow: 1px 1px white, -1px -1px #444444;
+  text-shadow: 1px 1px #fefefe, -1px -1px #444444;
+}
+/* line 25, ../../sass/partials/_nav.sass */
+nav ul li a:hover {
+  text-decoration: none;
 }
 
 /* line 1, ../../sass/partials/_articles.sass */
@@ -209,24 +215,25 @@ nav ul li a {
 
 /* line 8, ../../sass/partials/_articles.sass */
 .article {
+  font-family: "Alice", serif;
   padding: 20px;
 }
-/* line 10, ../../sass/partials/_articles.sass */
+/* line 12, ../../sass/partials/_articles.sass */
 .article:first-of-type {
   padding-top: 0;
 }
-/* line 12, ../../sass/partials/_articles.sass */
+/* line 14, ../../sass/partials/_articles.sass */
 .article h3 {
   margin: 30px 0 20px;
 }
-/* line 14, ../../sass/partials/_articles.sass */
+/* line 16, ../../sass/partials/_articles.sass */
 .article header h1 {
   margin-bottom: 20px;
   font-size: 26px;
-  letter-spacing: 1.2px;
+  font-family: "Alice", serif;
   line-height: 30px;
 }
-/* line 21, ../../sass/partials/_articles.sass */
+/* line 23, ../../sass/partials/_articles.sass */
 .article header h1 a {
   color: #b0dfe5;
   display: block;
@@ -235,26 +242,26 @@ nav ul li a {
   -o-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
-/* line 25, ../../sass/partials/_articles.sass */
+/* line 27, ../../sass/partials/_articles.sass */
 .article header h1 a:hover {
   color: #cccccc;
 }
-/* line 27, ../../sass/partials/_articles.sass */
+/* line 29, ../../sass/partials/_articles.sass */
 .article .content p, .article .entry-summary p {
   text-align: justify;
   margin-bottom: 10px;
   font-size: 18px;
 }
-/* line 34, ../../sass/partials/_articles.sass */
+/* line 36, ../../sass/partials/_articles.sass */
 .article ul {
   margin-left: 20px;
 }
-/* line 37, ../../sass/partials/_articles.sass */
+/* line 39, ../../sass/partials/_articles.sass */
 .article ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-/* line 41, ../../sass/partials/_articles.sass */
+/* line 43, ../../sass/partials/_articles.sass */
 .article .meta {
   font: 13px "Droid Serif", sans-serif;
   margin: 40px 0 -20px;
@@ -266,7 +273,7 @@ nav ul li a {
   /* -moz-box-orient: horizontal */
   /* box-orient: horizontal */
 }
-/* line 51, ../../sass/partials/_articles.sass */
+/* line 53, ../../sass/partials/_articles.sass */
 .article .meta div {
   background: #f2f1ea;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #f2f1ea));
@@ -309,22 +316,22 @@ nav ul li a {
   box-flex: 2;
   text-align: right;
 }
-/* line 82, ../../sass/partials/_articles.sass */
+/* line 84, ../../sass/partials/_articles.sass */
 .article .meta div p {
   margin-top: 6px;
   font-weight: normal;
 }
-/* line 85, ../../sass/partials/_articles.sass */
+/* line 87, ../../sass/partials/_articles.sass */
 .article .meta div a.tag {
   font-weight: bold;
 }
-/* line 87, ../../sass/partials/_articles.sass */
+/* line 89, ../../sass/partials/_articles.sass */
 .article .meta div p.tags {
   background: url(/img/theme/tag_icon_24.png) 0px -1px no-repeat;
   float: left;
   padding-left: 30px;
 }
-/* line 91, ../../sass/partials/_articles.sass */
+/* line 93, ../../sass/partials/_articles.sass */
 .article .more-link {
   letter-spacing: 0.08px;
   font-weight: normal;
@@ -332,7 +339,7 @@ nav ul li a {
   margin: -40px 10px;
   float: right;
 }
-/* line 97, ../../sass/partials/_articles.sass */
+/* line 99, ../../sass/partials/_articles.sass */
 .article figure {
   background: transparent;
   border: 3px dotted #dddddd;
@@ -349,24 +356,24 @@ nav ul li a {
   margin-left: -40px;
   margin-top: 60px;
 }
-/* line 109, ../../sass/partials/_articles.sass */
+/* line 111, ../../sass/partials/_articles.sass */
 .article figure:hover {
   border: 3px dotted #f71570;
 }
-/* line 111, ../../sass/partials/_articles.sass */
+/* line 113, ../../sass/partials/_articles.sass */
 .article figure img {
   margin: 0px;
   padding: 0px;
 }
-/* line 115, ../../sass/partials/_articles.sass */
+/* line 117, ../../sass/partials/_articles.sass */
 .article figure.alignleft {
   margin: 0 20px 20px 0;
 }
-/* line 117, ../../sass/partials/_articles.sass */
+/* line 119, ../../sass/partials/_articles.sass */
 .article figure.alignright {
   margin: 0 0 20px 20px;
 }
-/* line 121, ../../sass/partials/_articles.sass */
+/* line 123, ../../sass/partials/_articles.sass */
 .article figcaption {
   margin: 10px 0;
   font: 14px "Droid Serif", Georgia, serif;
@@ -374,11 +381,11 @@ nav ul li a {
   text-align: center;
   text-shadow: 0 1px 0 white;
 }
-/* line 127, ../../sass/partials/_articles.sass */
+/* line 129, ../../sass/partials/_articles.sass */
 .article .comments {
   margin: 32px;
 }
-/* line 129, ../../sass/partials/_articles.sass */
+/* line 131, ../../sass/partials/_articles.sass */
 .article .date {
   font-style: italic;
   float: right;
@@ -387,17 +394,23 @@ nav ul li a {
   margin: -48px 24px 0 24px;
   padding: 24px;
   border: 3px dashed #dddddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* Post title */
 /* Post meta */
 /* Post thumbnail and images */
-/* line 144, ../../sass/partials/_articles.sass */
+/* line 147, ../../sass/partials/_articles.sass */
 .archived_article {
   width: 220px;
   float: left;
 }
-/* line 147, ../../sass/partials/_articles.sass */
+/* line 150, ../../sass/partials/_articles.sass */
 .archived_article .title {
   font-size: 80%;
 }

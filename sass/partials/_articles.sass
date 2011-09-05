@@ -6,6 +6,8 @@
   margin-bottom: 20px
 
 .article
+  font:
+    family: 'Alice', serif
   padding: 20px
   &:first-of-type
     padding-top: 0
@@ -16,7 +18,7 @@
       bottom: 20px
     font:
       size: 26px
-    letter-spacing: 1.2px
+      family: 'Alice', serif
     line-height: 30px
     a
       color: $main-color
@@ -134,6 +136,7 @@
     margin: -48px 24px 0 24px
     padding: 24px
     border: 3px dashed #ddd
+    +border-radius(5px)
 
 /* Post title
 
