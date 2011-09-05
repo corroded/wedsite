@@ -166,30 +166,31 @@ header h3.sub-title {
 }
 
 /* line 1, ../../sass/partials/_nav.sass */
-menu {
+nav {
   border-bottom: 3px dotted #dddddd;
   *zoom: 1;
 }
 /* line 38, /Users/eumir/.rvm/gems/ruby-1.9.2-p180@deadcanvas/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-menu:after {
+nav:after {
   content: "";
   display: table;
   clear: both;
 }
 /* line 5, ../../sass/partials/_nav.sass */
-menu ul {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+nav ul {
+  font-family: "Abril Fatface", cursive;
+  font-size: 13px;
   float: right;
   margin: 0;
   padding: 0;
 }
-/* line 11, ../../sass/partials/_nav.sass */
-menu ul li {
+/* line 13, ../../sass/partials/_nav.sass */
+nav ul li {
   float: left;
   padding-right: 30px;
 }
-/* line 15, ../../sass/partials/_nav.sass */
-menu ul li a {
+/* line 17, ../../sass/partials/_nav.sass */
+nav ul li a {
   font-weight: bold;
   font-size: 1.3em;
   letter-spacing: 0.1em;
