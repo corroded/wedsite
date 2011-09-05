@@ -13,4 +13,9 @@ group :test, :development do
   gem 'riot'
   gem 'jeweler'
   gem 'shotgun'
+
+  gem 'rb-fsevent'
+  gem 'guard-livereload'
+  gem 'growl_notify'
+  gem 'livereload'
 end
