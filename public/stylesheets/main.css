@@ -217,7 +217,7 @@ nav ul li a {
   font-weight: bold;
   font-size: 1.3em;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px #fefefe, -1px -1px #cccccc;
+  text-shadow: 1px 1px #fefefe, -1px -1px #999999;
   -moz-transition: color 550ms ease-in-out;
   -webkit-transition: color 550ms ease-in-out;
   -o-transition: color 550ms ease-in-out;
@@ -251,7 +251,7 @@ nav ul li a:hover {
 /* line 8, ../../sass/partials/_articles.sass */
 .article {
   font-family: "Alice", serif;
-  padding: 20px 10px;
+  padding: 10px;
 }
 /* line 12, ../../sass/partials/_articles.sass */
 .article:first-of-type {
