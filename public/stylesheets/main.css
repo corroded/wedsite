@@ -234,7 +234,7 @@ nav ul li a:hover {
 }
 
 /* line 2, ../../sass/partials/_content.sass */
-#content p {
+#content > p {
   margin-bottom: 10px;
   font-size: 18px;
 }
@@ -251,7 +251,7 @@ nav ul li a:hover {
 /* line 8, ../../sass/partials/_articles.sass */
 .article {
   font-family: "Alice", serif;
-  padding: 20px;
+  padding: 20px 10px;
 }
 /* line 12, ../../sass/partials/_articles.sass */
 .article:first-of-type {
@@ -285,17 +285,18 @@ nav ul li a:hover {
 /* line 29, ../../sass/partials/_articles.sass */
 .article .content p, .article .entry-summary p {
   text-align: justify;
+  margin-bottom: 10px;
 }
-/* line 32, ../../sass/partials/_articles.sass */
+/* line 34, ../../sass/partials/_articles.sass */
 .article ul {
   margin-left: 20px;
 }
-/* line 35, ../../sass/partials/_articles.sass */
+/* line 37, ../../sass/partials/_articles.sass */
 .article ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-/* line 39, ../../sass/partials/_articles.sass */
+/* line 41, ../../sass/partials/_articles.sass */
 .article .meta {
   font: 13px "Droid Serif", sans-serif;
   margin: 40px 0 -20px;
@@ -307,7 +308,7 @@ nav ul li a:hover {
   /* -moz-box-orient: horizontal */
   /* box-orient: horizontal */
 }
-/* line 49, ../../sass/partials/_articles.sass */
+/* line 51, ../../sass/partials/_articles.sass */
 .article .meta div {
   background: #f2f1ea;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #f2f1ea));
@@ -348,21 +349,22 @@ nav ul li a:hover {
   text-align: right;
   color: #999999;
 }
-/* line 78, ../../sass/partials/_articles.sass */
+/* line 81, ../../sass/partials/_articles.sass */
 .article .meta div p {
   margin-top: 6px;
   font-weight: normal;
+  font-size: 13px;
 }
-/* line 81, ../../sass/partials/_articles.sass */
+/* line 87, ../../sass/partials/_articles.sass */
 .article .meta div a.tag {
   font-weight: bold;
 }
-/* line 83, ../../sass/partials/_articles.sass */
+/* line 89, ../../sass/partials/_articles.sass */
 .article .meta div p.tags {
   background: url(/img/theme/tag_icon_24.png) 0px -1px no-repeat;
   float: left;
 }
-/* line 86, ../../sass/partials/_articles.sass */
+/* line 92, ../../sass/partials/_articles.sass */
 .article .more-link {
   letter-spacing: 0.08px;
   font-weight: normal;
@@ -370,7 +372,7 @@ nav ul li a:hover {
   margin: -40px 10px;
   float: right;
 }
-/* line 92, ../../sass/partials/_articles.sass */
+/* line 98, ../../sass/partials/_articles.sass */
 .article figure {
   background: transparent;
   border: 3px dotted #dddddd;
@@ -387,24 +389,24 @@ nav ul li a:hover {
   margin-left: -40px;
   margin-top: 60px;
 }
-/* line 104, ../../sass/partials/_articles.sass */
+/* line 110, ../../sass/partials/_articles.sass */
 .article figure:hover {
   border: 3px dotted #f71570;
 }
-/* line 106, ../../sass/partials/_articles.sass */
+/* line 112, ../../sass/partials/_articles.sass */
 .article figure img {
   margin: 0px;
   padding: 0px;
 }
-/* line 110, ../../sass/partials/_articles.sass */
+/* line 116, ../../sass/partials/_articles.sass */
 .article figure.alignleft {
   margin: 0 20px 20px 0;
 }
-/* line 112, ../../sass/partials/_articles.sass */
+/* line 118, ../../sass/partials/_articles.sass */
 .article figure.alignright {
   margin: 0 0 20px 20px;
 }
-/* line 116, ../../sass/partials/_articles.sass */
+/* line 122, ../../sass/partials/_articles.sass */
 .article figcaption {
   margin: 10px 0;
   font: 14px "Droid Serif", Georgia, serif;
@@ -412,11 +414,11 @@ nav ul li a:hover {
   text-align: center;
   text-shadow: 0 1px 0 white;
 }
-/* line 122, ../../sass/partials/_articles.sass */
+/* line 128, ../../sass/partials/_articles.sass */
 .article .comments {
   margin: 32px;
 }
-/* line 124, ../../sass/partials/_articles.sass */
+/* line 130, ../../sass/partials/_articles.sass */
 .article .date {
   font-style: italic;
   float: right;
@@ -436,12 +438,12 @@ nav ul li a:hover {
 /* Post title */
 /* Post meta */
 /* Post thumbnail and images */
-/* line 140, ../../sass/partials/_articles.sass */
+/* line 146, ../../sass/partials/_articles.sass */
 .archived_article {
   width: 220px;
   float: left;
 }
-/* line 143, ../../sass/partials/_articles.sass */
+/* line 149, ../../sass/partials/_articles.sass */
 .archived_article .title {
   font-size: 80%;
 }

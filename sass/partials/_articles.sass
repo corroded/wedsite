@@ -8,7 +8,7 @@
 .article
   font:
     family: 'Alice', serif
-  padding: 20px
+  padding: 20px 10px
   &:first-of-type
     padding-top: 0
   h3
@@ -28,6 +28,8 @@
 
   .content p, .entry-summary p
     text-align: justify
+    margin:
+      bottom: 10px
 
   ul
     margin:
@@ -65,7 +67,8 @@
       border: 1px solid
       +border-radius(8px)
       letter-spacing: .08px
-      font-weight: bold
+      font:
+        weight: bold
       border-color: #eee #c9c9c9 #c9c9c9 #eee
       line-height: 1.8
       margin: 0
@@ -77,7 +80,10 @@
       color: #999
       p
         margin-top: 6px
-        font-weight: normal
+        font:
+          weight: normal
+          size: 13px
+
       a.tag
         font-weight: bold
       p.tags
