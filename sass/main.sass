@@ -22,7 +22,7 @@ header, footer, section, article
   display: block
 
 a
-  color: $main-color
+  color: $accent
   text-decoration: none
   &:hover
     text-decoration: underline
@@ -34,12 +34,16 @@ h1, h2, h3, h4
     family: 'Alice', sans-serif
 
 h2
-  color: $main-color
+  color: $accent
   font:
     size: 2em
   margin:
     top: 5px
     bottom: 15px
+
+h4
+  font:
+    size: 1.2em
 
 code
   font:
@@ -50,6 +54,14 @@ pre
   padding: 20px
   background: #0d0e11
   color: white
+
+address
+  display: block
+  line-height: 18px
+  margin: 10px 0
+  font:
+    size: 13px
+  color: #444
 
 blockquote
   font-style: italic
@@ -62,9 +74,18 @@ body > footer
     size: 15px
   color: #000
   background-color: none
+  border:
+    top: 3px dotted $accent
+
+.email-link
+  unicode-bidi: bidi-override
+  direction: rtl
 
 @import partials/header
 @import partials/nav
 
+@import partials/content
 @import partials/articles
 @import partials/suppliers
+
+

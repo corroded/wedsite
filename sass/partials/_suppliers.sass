@@ -1,39 +1,64 @@
 .suppliers
   margin:
-    top: 20px
+    top: 10px
 
   ul
+    margin:
+      top: 20px
     +pie-clearfix
+    border:
+      top: 1px dotted $accent
+    padding:
+      top: 10px
 
   .supplier
     +pie-clearfix
     margin:
       bottom: 10px
-    width: 48%
-    float: left
+    border:
+      bottom: 1px dotted $accent
+    padding:
+      bottom: 10px
 
     a
       display: block
       background: #fff
       +transition(background 250ms ease-in-out)
       &:hover
-        background: $alt-color
+        background: $main-color
 
     .logo
-      margin:
-        right: 10px
-      padding: 5px
-      float: left
-      border: 1px dotted #999
-      +border-radius(5px)
-      +avatar-dimensions-medium
-      +single-box-shadow
+      +pie-clearfix
+      +float-left
+      width: 120px
+
+      a
+        margin:
+          right: 10px
+        padding: 5px
+        float: left
+        border: 1px dotted #999
+        +border-radius(5px)
+        +avatar-dimensions-medium
+        +single-box-shadow
 
       img
         +avatar-dimensions-medium
 
     .details
-      float: left
+      +float-left
+      width: 835px
+      +pie-clearfix
 
-      .name
-        color: $main-color
+      a
+        background: none
+        margin: 0
+        +single-text-shadow
+
+      .description
+        margin: 10px 0
+        line-height: 20px
+        font:
+          size: 15px
+
+

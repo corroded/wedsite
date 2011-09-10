@@ -5,6 +5,12 @@
 @mixin inner-shadow($col1: #fff, $col2: #444)
   +text-shadow(1px 1px $col1, -1px -1px $col2)
 
+@mixin fadein-hover($color: $accent)
+  +transition(color 550ms ease-in-out)
+
+  &:hover
+    color: $color
+
 $main-color: #b0dfe5
 $alt-color: #fff3cb
-$accent: #8c8a77
+$accent: #998D65
