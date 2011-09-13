@@ -6,20 +6,18 @@
   margin-bottom: 20px
 
 .article
-  font:
-    family: 'Alice', serif
   padding: 10px
   &:first-of-type
     padding-top: 0
   h3
     margin: 30px 0 20px
   header h1
+    +serif
     color: $accent
     margin:
       bottom: 20px
     font:
       size: 26px
-      family: 'Alice', serif
     line-height: 30px
     +inner-shadow(#fff, #999)
     a
@@ -93,7 +91,7 @@
     letter-spacing: .08px
     font-weight: normal
     font-size: 90%
-    margin: -40px 10px
+    margin: -30px 10px
     float: right
   figure
     background: transparent
@@ -128,7 +126,10 @@
   .comments
     margin: 32px
   .date
-    font-style: italic
+    +serif
+    font:
+      style: italic
+      size: 20px
     float: right
     color: $accent
     line-height: 43px

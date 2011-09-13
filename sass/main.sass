@@ -10,13 +10,12 @@ html
 
 body
   margin: 0 auto
-  font:
-    family: 'Alice', Georgia, Times, serif
-    size: 20px
   line-height: 30px
   padding: 15px
   width: 960px
   background: $alt-color
+  @include sans-serif(normal,$basefont,$baseline)
+
 
 header, footer, section, article
   display: block
@@ -30,8 +29,6 @@ a
 h1, h2, h3, h4
   display: block
   margin: 0
-  font:
-    family: 'Alice', sans-serif
 
 h2
   color: $accent
@@ -74,8 +71,6 @@ body > footer
     size: 15px
   color: #000
   background-color: none
-  border:
-    top: 3px dotted $accent
 
 .email-link
   unicode-bidi: bidi-override
