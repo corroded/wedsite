@@ -74,7 +74,7 @@ body {
   line-height: 30px;
   padding: 15px;
   width: 960px;
-  background: #fff3cb;
+  background: #fff3cb url("/images/main-bg2.png") center no-repeat fixed;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
