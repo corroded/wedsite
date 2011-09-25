@@ -73,7 +73,7 @@ body {
   margin: 0 auto;
   line-height: 30px;
   padding: 15px;
-  width: 960px;
+  width: 780px;
   background: #fff3cb url("/images/main-bg2.png") center no-repeat fixed;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -142,17 +142,17 @@ blockquote {
   font-style: italic;
 }
 
-/* line 66, ../../sass/main.sass */
+/* line 67, ../../sass/main.sass */
 body > footer {
   text-align: left;
-  padding: 2px 12px;
+  padding: 2px 0;
   font-style: italic;
   font-size: 15px;
   color: black;
   background-color: none;
 }
 
-/* line 75, ../../sass/main.sass */
+/* line 76, ../../sass/main.sass */
 .email-link {
   unicode-bidi: bidi-override;
   direction: rtl;
@@ -236,7 +236,7 @@ nav ul li a:hover {
 /* line 2, ../../sass/partials/_content.sass */
 #content > p {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* line 1, ../../sass/partials/_articles.sass */
@@ -254,14 +254,18 @@ nav ul li a:hover {
   line-height: 1.7em;
 }
 /* line 13, ../../sass/partials/_articles.sass */
+.article footer {
+  margin-top: 40px;
+}
+/* line 17, ../../sass/partials/_articles.sass */
 .article:first-of-type {
   padding-top: 0;
 }
-/* line 15, ../../sass/partials/_articles.sass */
+/* line 19, ../../sass/partials/_articles.sass */
 .article h3 {
   margin: 30px 0 20px;
 }
-/* line 17, ../../sass/partials/_articles.sass */
+/* line 21, ../../sass/partials/_articles.sass */
 .article header h1 {
   font-family: "Alice", "Georgia", Times, serif;
   font-size: 14px;
@@ -273,7 +277,7 @@ nav ul li a:hover {
   line-height: 30px;
   text-shadow: 1px 1px white, -1px -1px #999999;
 }
-/* line 26, ../../sass/partials/_articles.sass */
+/* line 30, ../../sass/partials/_articles.sass */
 .article header h1 a {
   display: block;
   -moz-transition: color 550ms ease-in-out;
@@ -285,21 +289,21 @@ nav ul li a:hover {
 .article header h1 a:hover {
   color: #998d65;
 }
-/* line 30, ../../sass/partials/_articles.sass */
+/* line 34, ../../sass/partials/_articles.sass */
 .article .content p, .article .entry-summary p {
   text-align: justify;
   margin-bottom: 10px;
 }
-/* line 35, ../../sass/partials/_articles.sass */
+/* line 39, ../../sass/partials/_articles.sass */
 .article ul {
   margin-left: 20px;
 }
-/* line 38, ../../sass/partials/_articles.sass */
+/* line 42, ../../sass/partials/_articles.sass */
 .article ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-/* line 42, ../../sass/partials/_articles.sass */
+/* line 46, ../../sass/partials/_articles.sass */
 .article .meta {
   font: 13px "Droid Serif", sans-serif;
   margin: 40px 0 -20px;
@@ -311,7 +315,7 @@ nav ul li a:hover {
   /* -moz-box-orient: horizontal */
   /* box-orient: horizontal */
 }
-/* line 52, ../../sass/partials/_articles.sass */
+/* line 56, ../../sass/partials/_articles.sass */
 .article .meta div {
   background: #f2f1ea;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #f2f1ea));
@@ -352,30 +356,29 @@ nav ul li a:hover {
   text-align: right;
   color: #999999;
 }
-/* line 82, ../../sass/partials/_articles.sass */
+/* line 86, ../../sass/partials/_articles.sass */
 .article .meta div p {
   margin-top: 6px;
   font-weight: normal;
   font-size: 13px;
 }
-/* line 88, ../../sass/partials/_articles.sass */
+/* line 92, ../../sass/partials/_articles.sass */
 .article .meta div a.tag {
   font-weight: bold;
 }
-/* line 90, ../../sass/partials/_articles.sass */
+/* line 94, ../../sass/partials/_articles.sass */
 .article .meta div p.tags {
   background: url(/img/theme/tag_icon_24.png) 0px -1px no-repeat;
   float: left;
 }
-/* line 93, ../../sass/partials/_articles.sass */
+/* line 97, ../../sass/partials/_articles.sass */
 .article .more-link {
   letter-spacing: 0.08px;
   font-weight: normal;
-  font-size: 90%;
-  margin: -30px 10px;
-  float: right;
+  margin: -30px 0;
+  float: left;
 }
-/* line 99, ../../sass/partials/_articles.sass */
+/* line 103, ../../sass/partials/_articles.sass */
 .article figure {
   background: transparent;
   border: 3px dotted #dddddd;
@@ -392,24 +395,24 @@ nav ul li a:hover {
   margin-left: -40px;
   margin-top: 60px;
 }
-/* line 111, ../../sass/partials/_articles.sass */
+/* line 115, ../../sass/partials/_articles.sass */
 .article figure:hover {
   border: 3px dotted #f71570;
 }
-/* line 113, ../../sass/partials/_articles.sass */
+/* line 117, ../../sass/partials/_articles.sass */
 .article figure img {
   margin: 0px;
   padding: 0px;
 }
-/* line 117, ../../sass/partials/_articles.sass */
+/* line 121, ../../sass/partials/_articles.sass */
 .article figure.alignleft {
   margin: 0 20px 20px 0;
 }
-/* line 119, ../../sass/partials/_articles.sass */
+/* line 123, ../../sass/partials/_articles.sass */
 .article figure.alignright {
   margin: 0 0 20px 20px;
 }
-/* line 123, ../../sass/partials/_articles.sass */
+/* line 127, ../../sass/partials/_articles.sass */
 .article figcaption {
   margin: 10px 0;
   font: 14px "Droid Serif", Georgia, serif;
@@ -417,11 +420,11 @@ nav ul li a:hover {
   text-align: center;
   text-shadow: 0 1px 0 white;
 }
-/* line 129, ../../sass/partials/_articles.sass */
+/* line 133, ../../sass/partials/_articles.sass */
 .article .comments {
   margin: 32px;
 }
-/* line 131, ../../sass/partials/_articles.sass */
+/* line 135, ../../sass/partials/_articles.sass */
 .article .date {
   font-family: "Alice", "Georgia", Times, serif;
   font-size: 14px;
@@ -446,12 +449,12 @@ nav ul li a:hover {
 /* Post title */
 /* Post meta */
 /* Post thumbnail and images */
-/* line 150, ../../sass/partials/_articles.sass */
+/* line 154, ../../sass/partials/_articles.sass */
 .archived_article {
   width: 220px;
   float: left;
 }
-/* line 153, ../../sass/partials/_articles.sass */
+/* line 157, ../../sass/partials/_articles.sass */
 .archived_article .title {
   font-size: 80%;
 }
@@ -540,7 +543,7 @@ nav ul li a:hover {
 .suppliers .supplier .details {
   display: inline;
   float: left;
-  width: 835px;
+  width: 650px;
   *zoom: 1;
 }
 /* line 38, /Users/eumir/.rvm/gems/ruby-1.9.2-p180@deadcanvas/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -559,5 +562,4 @@ nav ul li a:hover {
 .suppliers .supplier .details .description {
   margin: 10px 0;
   line-height: 20px;
-  font-size: 15px;
 }
