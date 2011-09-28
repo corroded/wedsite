@@ -1,0 +1,45 @@
+#gallery
+  #splash
+    width: 750px
+    background: url('/images/pages/gallery/splash.jpg') no-repeat
+    height: 500px
+    +border-radius(5px)
+    border: 5px solid #fff
+    +single-box-shadow($accent)
+    margin: 10px auto
+    position: relative
+
+    .details
+      position: absolute
+      bottom: 10px
+      width: 700px
+      padding:
+        top: 50px
+        right: 50px
+      background: #000
+      color: #fff
+      +opacity(0.5)
+
+      p
+        margin: 10px
+
+
+  .thumbs
+    margin: auto
+    +pie-clearfix
+    li
+      float: left
+      a
+        +opacity(0.5)
+        +transition(opacity 250ms ease-in-out)
+
+        &:hover
+          +opacity(1)
+
+      .thumb
+        img
+          margin: 0 5px
+          +border-radius(5px)
+          border: 5px solid #fff
+          width: 110px
+          +single-box-shadow($accent)

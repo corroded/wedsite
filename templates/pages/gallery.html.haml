@@ -1,0 +1,23 @@
+#gallery
+  %h2 Prenup
+
+  #splash
+    .details
+      %p Photography by Jason Angcao
+
+  #thumbs
+    %ul.thumbs
+      - thumb_path = File.join("images", "gallery", "thumbs", "prenup")
+      - full_path = File.join("images", "gallery", "prenup")
+      - Dir.glob(File.join("public", thumb_path, "*.jpg")).each do |file|
+        %li
+          - basename = File.basename(file)
+          %a.thumb{:href => "#{full_path}/#{basename}", :title => "your image title"}
+            %img{:alt => "", :src => "#{thumb_path}/#{basename}"}/
+          -#.caption
+            -#(Any html can go here)
+
+:javascript
+  $(function(){
+    $("a.thumb").lightBox();
+  })
