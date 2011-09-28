@@ -13,20 +13,20 @@ module RubySlippers
   module Client
     class Tasks
       include Rake::DSL
-      
+
       ROOT = File.expand_path("../../../../", __FILE__)
-      THUMBS = File.expand_path("../../../../public/img/archives/", __FILE__)
-      
+      THUMBS = File.expand_path("../../../../public/images/archives/", __FILE__)
+
       require File.expand_path("../../../../config", __FILE__)
       app = RubySlippers::Engine::App
       @@config = $app.config
-      
+
       def create_article!
         title = ask('Title: ')
         slug = title.empty?? nil : title.strip.slugize
 
         article = {
-          'title' => title, 
+          'title' => title,
           'date' => Time.now.strftime("%d/%m/%Y")
         }.to_yaml
         article << "\narticle text here\n\n"
@@ -44,7 +44,7 @@ module RubySlippers
           puts "I can't create the article, #{path} already exists."
           false
         end
-        
+
       end
 
       def install_blog!
@@ -56,7 +56,7 @@ module RubySlippers
         `heroku open`
         true
       end
-      
+
       def publish_blog!
         puts "publishing your article(s) to heroku..."
         `git add .`
@@ -64,7 +64,7 @@ module RubySlippers
         `git push heroku master -f`
         `heroku open`
       end
-      
+
       def create_missing_thumbs!
         @@config[:url] = "http://localhost:9393"
         for article in RubySlippers::Engine::Site.articles(@@config[:ext])
@@ -75,36 +75,36 @@ module RubySlippers
           clean_pid
         end
       end
-      
+
     private
-    
+
       def start_web
         cmd="cd #{ROOT} && rackup -p 9393 --pid ./rack.pid &"
         puts "starting web server"
         system cmd
       end
-    
+
       def clean_pid
         puts "stopping web server"
         pid = File.read(ROOT+'/rack.pid')
         system "kill -9 #{pid}"
       end
-    
+
       def thumb_exists?(path)
         File.exists? THUMBS+'/'+path+'-full.png'
       end
-      
+
       def make_thumb(browse_to, save_to, image_name)
         cmd="cd #{ROOT} && python ./bin/webkit2png.py -F #{browse_to} -o #{save_to}/#{image_name}"
         system cmd
       end
-    
+
       def ask message
         print message
         STDIN.gets.chomp
       end
 
-      
+
     end
   end
 end
